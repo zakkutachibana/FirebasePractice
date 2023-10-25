@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FirebasePractice</string>
+    <string name="inbox_title">Inbox</string>
+    <string name="outbox_title">Outbox</string>
+    <string name="favourites_title">Favourites</string>
+    <string name="mail_subheader_title">Mail</string>
+</resources>
