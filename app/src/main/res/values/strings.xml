@@ -4,4 +4,6 @@
     <string name="outbox_title">Outbox</string>
     <string name="favourites_title">Favourites</string>
     <string name="mail_subheader_title">Mail</string>
+    <string name="hint_enter_data">Enter Data</string>
+    <string name="send_data">Send Data</string>
 </resources>

@@ -11,7 +11,7 @@
         android:id="@+id/drawerLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:openDrawer="start"
+
         android:fitsSystemWindows="true"
         >
 
@@ -24,16 +24,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:padding="15dp"
                 >
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textField"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="@string/hint_enter_data"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:text="@string/app_name"/>
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_send_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_data"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textField"
+                    app:layout_constraintStart_toStartOf="@+id/textField"
+                    app:layout_constraintTop_toBottomOf="@+id/textField" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
